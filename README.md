@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 14/03/2024
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: SATHYA N
+###  ROLL NO : 212221040149
+###  DEPARTMENT: CSE
 
 
 # EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
@@ -74,14 +74,43 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+```
+#include<Servo.h>
+Servo s1;
+  int pos =0;
 
+void setup()
+{
+  s1.attach(9);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  for(pos=0;pos<=180;pos+=1)
+  {
+    s1.write(pos);
+    delay(20);
+    //Serial.print("Angle=");
+    Serial.println(pos);
+  }
+  for(pos=180;pos>=0;pos-=1)
+  {
+    s1.write(pos);
+    delay(20);
+    //Serial.print("Angle=");
+    Serial.println(pos);
+  }
+}
+``` 
+### CIRCUIT DIAGRAM:
+![image](https://github.com/Sathya-006/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/121661327/a6260d43-def9-4621-a7c8-3a2f69732a21)
 
+### SHEMATIC DIAGRAM:
+![Screenshot 2024-03-14 111810](https://github.com/Sathya-006/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/121661327/b778597d-6925-4d1a-98ea-cd89f5a9ae42)
 
-
-
-
+### SERIAL MONITOR:
+![Screenshot 2024-03-14 112245](https://github.com/Sathya-006/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/121661327/b6459fbc-c86e-469b-bef7-4dbfe9af6814)
 
 
 ### RESULTS: 
