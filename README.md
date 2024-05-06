@@ -1,11 +1,8 @@
+# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
 ###  DATE: 14/03/2024
-
 ###  NAME: SATHYA N
 ###  ROLL NO : 212221040149
 ###  DEPARTMENT: CSE
-
-
-# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
@@ -113,5 +110,5 @@ void loop()
 ![Screenshot 2024-03-14 112245](https://github.com/Sathya-006/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/121661327/b6459fbc-c86e-469b-bef7-4dbfe9af6814)
 
 
-### RESULTS: 
+### RESULT: 
 Arduino uno interfacing with servo motor is learned and angular position is controlled using PWM signal.
